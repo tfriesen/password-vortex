@@ -82,6 +82,9 @@ fall2015!
 Autumn15
 Autumn15!
 autumn15!
+Autumn2015
+Autumn2015!
+autumn2015!
 ```
 
 Plus maybe Canadian thanksgiving. Also, this list was manually generated, so I may have missed one and the order is wrong.
