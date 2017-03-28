@@ -34,19 +34,19 @@ python vortex.py [options]
 
 ## Options
 
-**-m** <min length> (default: 8)
+**-m** \<min length\> (default: 8)
 
-**-M** <max length> (default: 100)
+**-M** \<max length\> (default: 100)
 
-**-d** <start date>, in format YYYY-MM (default: today)
+**-d** \<start date\>, in format YYYY-MM (default: today)
 
-**-l** <months>, number of months to go back (default: 6)
+**-l** \<months\>, number of months to go back (default: 6)
 
 **-H** include major holidays (ie Christmas, Easter) that occur during the time period (coming)
 
-**-s** <special chars>, special characters to append to the end of passwords, to generate more candidates. Use 's' for space. Only a single character is appended at a time. '!' and '.' are good candidates (default: none)
+**-s** \<special chars\>, special characters to append to the end of passwords, to generate more candidates. Use 's' for space. Only a single character is appended at a time. '!' and '.' are good candidates (default: none)
 
-**-c** <complexity>, minimum password complexity allowed. In other words, a generated password must have this number of characters from different sets (upper, lower, number, etc). Microsoft environments generally require 3. (default: 2)
+**-c** \<complexity\>, minimum password complexity allowed. In other words, a generated password must have this number of characters from different sets (upper, lower, number, etc). Microsoft environments generally require 3. (default: 2)
 
 
 
