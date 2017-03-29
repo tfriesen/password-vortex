@@ -10,8 +10,7 @@ Generate passwords commonly used in password rotation environments.
 """
 
 
-
-full_month_list = [
+month_list = [
     "january",
     "february",
     "march",
@@ -24,21 +23,6 @@ full_month_list = [
     "october",
     "november",
     "december" ]
-
-abbrv_month_list = [
-    "jan",
-    "feb",
-    "mar",
-    "apr",
-    "may",
-    "jun",
-    "jul",
-    "aug",
-    "sep",
-    "oct",
-    "nov",
-    "dec" ]
-
 
 
 
@@ -78,10 +62,11 @@ def makeCandidates(start_year, start_month, num_months, special_chars, use_holid
             #TODO: check for overflow (negative years)
             start_year = start_year - 1
             cur_month = 11
-        cur_candidates.append(full_month_list[cur_month] + str(start_year))
-        cur_candidates.append(full_month_list[cur_month] + str(start_year)[-2:])
-        cur_candidates.append(abbrv_month_list[cur_month] + str(start_year))
-        cur_candidates.append(abbrv_month_list[cur_month] + str(start_year)[-2:])
+        cur_candidates.append(month_list[cur_month] + str(start_year))
+        cur_candidates.append(month_list[cur_month] + str(start_year)[-2:])
+        #include short month format (feb, mar, etc)
+        cur_candidates.append(month_list[cur_month][:3] + str(start_year))
+        cur_candidates.append(month_list[cur_month][:3] + str(start_year)[-2:])
         
         candidates.extend(cur_candidates)
         candidates.extend(map(str.capitalize, cur_candidates))
