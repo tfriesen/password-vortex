@@ -53,14 +53,14 @@ month_list = [
 
 
 seasons_list = [
-    "winter",
-    "winter",
+    ["winter"],
+    ["winter"],
     ["winter", "spring"],
-    "spring",
-    "spring",
+    ["spring"],
+    ["spring"],
     ["spring", "summer"],
-    "summer",
-    "summer",
+    ["summer"],
+    ["summer"],
     ["summer", "autumn", "fall"],
     ["autumn", "fall"],
     ["autumn", "fall"],
