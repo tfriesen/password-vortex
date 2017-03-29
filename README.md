@@ -50,7 +50,7 @@ vortex.py [options]
 
 **-s** \<chars\>, characters to insert as a **s**eparator between the month or season and the year. Use 's' for space. Only a single character is appended at a time. '!', '.', ',', '@', '#' and '_' are all good candidates (default: none). Vortex currently (and intentionally) only does one end character, OR one separator character per password candidate.
 
-**-c** \<complexity\>, minimum password complexity allowed. In other words, a generated password must have this number of characters from different sets (upper, lower, number, etc). Microsoft environments generally require 3. (default: 2)
+**-c** \<complexity\>, minimum password complexity allowed. In other words, a generated password must have this number of characters from different sets (upper, lower, number, symbol). Microsoft environments generally require 3. (default: 2)
 
 **-x** include common misspellings (ie Febuary, Autum) (coming) (default: off)
 
@@ -107,7 +107,7 @@ January.2015
 
 ### Any tips for using this tool?
 
-If you can afford extra password guesses, go back further than you think you need to. User accounts are frequently abandoned (ie an employee leaves) and not properly disabled. On my own pentests I've found accounts using passwords that would seem to be 3+ years old, despite much shorter expiration policies.
+If you can afford extra password guesses, go back further than you think you need to. User accounts are frequently abandoned (ie an employee leaves) and not properly disabled. Users are also very good at avoiding rotating their passwords, if they can. On my own pentests I've found accounts using passwords that would seem to be 3+ years old, despite much shorter expiration policies.
 
 ### Why don't you include passwords where the year comes first?
 
@@ -124,5 +124,13 @@ See previous answer.
 ### Who decides what counts as a 'major' Holiday?
 
 I do.
+
+### How effective is this tool? How common are passwords like these in the real world?
+
+In my experience, about 2-3% of users will use a password rotation scheme that would be covered by this tool, when password rotation is enforced. That may not sound like a lot, but even in an organization of just 100 valid accounts, there will almost certainly be more than one account that would be cracked.
+
+### How can I protect my organization?
+
+The best thing to do is turn off password rotation! I know this may sound crazy, as that's what the infosec experts have been advising for decades, but we've recently come to realize that password rotation hurts much more than it helps. But that is a topic that would take much more than a FAQ to address.
 
 
