@@ -22,10 +22,10 @@ Options:
 
 \t-H\t include major holidays (ie Christmas, Easter) that occur during the time period (coming) (default: off)
 
-\t-e\t <chars>, characters to append to the End of passwords, to generate more candidates. Use 's' for space. Only a single character 
+\t-e\t <chars>, characters to append to the End of passwords, to generate more candidates. Multiple characters can be specified, but only a single character 
 \t\t is appended at a time. '!' and '.' are good candidates (default: none)
 
-\t-s\t <chars>, characters to insert as a Separator between the month or season and the year. Use 's' for space. Only a single character 
+\t-s\t <chars>, characters to insert as a Separator between the month or season and the year. Multiple characters can be specified, but only a single character 
 \t\t is appended at a time. '!', '.', ',', '@', '#' and '_' are all good candidates (default: none). Vortex currently (and intentionally) 
 \t\t only does one end character, OR one separator character per password candidate.
 
@@ -193,14 +193,8 @@ def main(argv):
             sys.exit(2)
         elif opt == "-s":
             separator_chars = list(arg)
-            #convert 's' to a space
-            if "s" in separator_chars:
-                separator_chars[separator_chars.index("s")] = " "
         elif opt == "-e":
             suffix_chars = list(arg)
-            #convert 's' to a space
-            if "s" in suffix_chars:
-                suffix_chars[suffix_chars.index("s")] = " "
         elif opt == "-c":
             complexity = int(arg)
         elif opt == "-x":

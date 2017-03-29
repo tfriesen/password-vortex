@@ -46,9 +46,9 @@ vortex.py [options]
 
 **-H** include major holidays (ie Christmas, Easter) that occur during the time period (coming) (default: off)
 
-**-e** \<chars\>, characters to append to the **e**nd of passwords, to generate more candidates. Use 's' for space. Only a single character is appended at a time. '!' and '.' are good candidates (default: none)
+**-e** \<chars\>, characters to append to the **e**nd of passwords, to generate more candidates. Multiple characters can be specified, but only a single character is appended at a time. '!' and '.' are good candidates (default: none)
 
-**-s** \<chars\>, characters to insert as a **s**eparator between the month or season and the year. Use 's' for space. Only a single character is appended at a time. '!', '.', ',', '@', '#' and '_' are all good candidates (default: none). Vortex currently (and intentionally) only does one end character, OR one separator character per password candidate.
+**-s** \<chars\>, characters to insert as a **s**eparator between the month or season and the year. Multiple characters can be specified, but only a single character is appended at a time. '!', '.', ',', '@', '#' and '_' are all good candidates (default: none). Vortex currently (and intentionally) only does one end character, OR one separator character per password candidate.
 
 **-c** \<complexity\>, minimum password complexity allowed. In other words, a generated password must have this number of characters from different sets (upper, lower, number, symbol). Microsoft environments generally require 3. (default: 2)
 
